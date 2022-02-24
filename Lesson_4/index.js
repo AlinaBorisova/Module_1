@@ -7,7 +7,7 @@
     let price = +prompt('Введите цену товара'); 
 
 
-    if (isNaN(count && price)){
+    if (isNaN(count || price)){
         alert("Вы ввели некорректные данные")
         }else {
         console.log('На складе', count, 'единиц товара', item, 'на сумму', (count*price), '$');
