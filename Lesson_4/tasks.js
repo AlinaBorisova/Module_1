@@ -16,7 +16,7 @@
     const userMarkRuss = +prompt('Введите кол-во баллов по русскому языку');
     const userMarkIT = +prompt('Введите кол-во баллов по информатике:');
 
-        const totalMark = userMark_1 + userMark_2 + userMark_3;
+        const totalMark = userMarkMath + userMarkRuss + userMarkIT;
         console.log(totalMark);
 
         if (totalMark >= 265) {
