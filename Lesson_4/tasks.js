@@ -27,9 +27,9 @@
 }
 
 {
-    const Money = +prompt('Введите сумму');
+    const money = +prompt('Введите сумму');
 
-    if (Money % 100 === 0) {
+    if (money % 100 === 0) {
         console.log('Получите деньги');
     } else {
         console.log('Введите сумму, кратную 100');

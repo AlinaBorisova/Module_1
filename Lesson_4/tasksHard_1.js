@@ -1,14 +1,14 @@
 'use strict';
 
 {
-const Revenue= +prompt('Введите Ваш доход');
+const revenue= +prompt('Введите Ваш доход');
 
-    if (Revenue >0 && Revenue < 15000) {
-        console.log(`Tax: ${Revenue * 0.13}`);
-    } else if (Revenue >= 15000 && Revenue < 50000) {
-        console.log(`Tax: ${Revenue * 0.2}`);
-    } else if (Revenue >= 50000) {
-        console.log(`Tax: ${Revenue * 0.3}`)
+    if (revenue >0 && revenue < 15000) {
+        console.log(`Tax: ${revenue * 0.13}`);
+    } else if (revenue >= 15000 && revenue < 50000) {
+        console.log(`Tax: ${revenue * 0.2}`);
+    } else if (revenue >= 50000) {
+        console.log(`Tax: ${revenue * 0.3}`)
     } else {
         console.log('Ошибка');
     };
