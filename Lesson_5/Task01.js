@@ -1,7 +1,7 @@
 'use strict';
 
-let usd = 73;
-let euro = 1.2 * usd;
+const usd = 73;
+const euro = 1.2 * usd;
 
 const amount = +prompt('Стоимость покупки в евро');
 
