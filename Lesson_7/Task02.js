@@ -7,7 +7,7 @@ const getAverageValue = (arr) => {
     for (let i = 0; i < arr.length; i++) {
         n += arr[i];
     };
-    return n/arr.length;
+    return n/arr.length; 
 };
 
 const newAllCashbox = Math.floor(getAverageValue(allCashbox));

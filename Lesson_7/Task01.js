@@ -8,4 +8,4 @@ const filter = (arr) => {
     console.log('Сдали экзамен:',filtered);
   };
     
-filter();
+filter(); 
