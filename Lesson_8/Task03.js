@@ -1,19 +1,25 @@
 'use strict';
 
-const newGetRandom2 = (arr) => {
+const newGetRandom2 = (arr, n, m, str) => {
     const result = [];
-    const n = 0;
-    const m = 100;
-    const getEven = [];
-    const getOdd = [];
-        for(let i = 0; i <= arr; i++) {
-            result.push(Math.ceil(Math.random() * ((m - n) + n)));
-                if (result[i] % 2 === 0) {
-                    getEven.push(result[i])
-                } else if (!result[i] % 2 === 0) {
-                    getOdd.push(result[i])}
-            }
-                console.log(getEven);
-        return result;
+    
+    let min, max;
+    if(m > n){
+        max = m;
+        min = n;
+    } else {
+    max = n;
+    min = m;
     };
-    newGetRandom2(10);
+        for(let i = 0; i <= arr; i++) {
+            result.push(Math.ceil(Math.random() * ((max - min) + min)));
+        };
+
+        if (str = 'even') {
+            return result.filter((item) => (item % 2 === 0))
+        };
+        if (str = 'odd') {
+            return result.filter((item) => (item % 2 === 1))
+        };
+};
+    console.log(newGetRandom2(10, 100, 0, 'odd'));

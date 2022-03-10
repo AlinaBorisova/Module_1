@@ -1,6 +1,6 @@
 'use strict';
 
-const min = 0;
+/*const min = 0;
 const max = 100;
 const num = Math.round(Math.random() * (max - min));
         console.log(num);
@@ -30,4 +30,4 @@ const game = () => {
         };
     };
 };
-game();
+game();*/

@@ -1,11 +1,17 @@
 'use strict';
 
-const newGetRandom = (arr) => {
+const newGetRandom = (arr, n, m) => {
   const result = [];
-  const n = 0;
-  const m = 100;
+  let min, max;
+    if(m > n){
+        max = m;
+        min = n;
+    } else {
+    max = n;
+    min = m;
+    };
   for(let i = 0; i <= arr; i++)
       result.push(Math.ceil(Math.random() * ((m - n) + n)));
   return result;
 }
-console.log(newGetRandom(10));
+console.log(newGetRandom(10, 0, 100));
