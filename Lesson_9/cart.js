@@ -53,7 +53,7 @@ const cart = {
     prints: function() {
         const cartStr = JSON.stringify(cart.items);
         console.log(cartStr);
-        console.log('totalPrice =', this.totalPrice);
+        console.log('totalPrice =', this.getTotalPrice());
     },
 };
 
