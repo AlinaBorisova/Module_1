@@ -46,7 +46,7 @@ const cart = {
           recurse(cart.items.length, 0); */
     },
     clear: function() {
-        cart.items.splice(0, cart.items.length);
+        cart.items = [];
         this.totalPrice = 0;
         this.count = 0;
     },
