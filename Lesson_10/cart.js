@@ -2,7 +2,9 @@
 
 const cart = {
     items: [],
-    totalPrice: 0,
+    get totalPrice() {
+        return this.calculateItemPrice();
+    },
     count: 0, 
     
     add: function(name, price, count = 1) {
@@ -42,13 +44,6 @@ let meat = new cart.add('Pork', 800);
 //cart.clear();
 
 console.log(cart);
-
-Object.defineProperty(cart, 'totalPrice', {
-    get() {
-        return cart.calculateItemPrice();
-},
-}),
-
 cart.prints();
 
 
