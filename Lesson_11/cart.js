@@ -7,7 +7,7 @@ const cart = {
   },
   count: 0,
 
-  Add: function(name, price, count = 1) {
+  add(name, price, count = 1) {
     cart.items.push({
       name,
       price,
@@ -38,9 +38,9 @@ const cart = {
 };
 
 
-const fruits = new cart.Add('Apple', 200);
-const veg = new cart.Add('Tomato', 250);
-const meat = new cart.Add('Pork', 800);
+cart.add('Apple', 200);
+cart.add('Tomato', 250);
+cart.add('Pork', 800);
 
 // cart.clear();
 
